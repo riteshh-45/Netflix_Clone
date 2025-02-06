@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("assets/images/bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1600px, 100vw);
+    height: 95vh;
+    position: relative;
+}
+
+.main .box {
+    height: 95vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+    height: 62px;
+}
+
+nav img {
+    width: 154px;
+    position: relative;
+    z-index: 10;
+    margin-top: 37px;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+    margin-top: 37px;
+}
+
+.hero {
+    font-family: "Martel Sans", serif;
+    height: calc(100% - 62px);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+    padding: 0 30px;
+}
+
+.hero span:first-child {
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 70px;
+    text-align: center;
+    max-width: 800px;
+}
+
+.hero span:nth-child(2) {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+}
+
+.hero span:nth-child(3) {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.seperation {
+    height: 4px;
+    background-color: gray;
+}
+
+.btn {
+    padding: 5px 60px 8px 6px;
+    font-weight: bold;
+    color: white;
+    border-radius: 4px;
+    border: 0.5px solid rgb(255, 255, 255);
+    background-color: rgba(23, 23, 23, 0.2);
+    margin: 12px;
+}
+.btn svg{
+    margin-right: 7px;
+}
+.btn-red {
+    background-color: red;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    padding: 15px 58px;
+    border-radius: 4px;
+    border: 0.1px solid rgb(255, 0, 0);
+}
+
+.btn-red-sm {
+    background-color: red;
+    padding: 9px 18px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: white;
+    border: none;
+
+}
+
+.hero input {
+    font-weight: bold;
+    background-color: rgba(23, 23, 23, 0.2);
+    font-size: 18px;
+    padding: 16px 70px 15px 9px;
+    border-radius: 4px;
+    border: 0.1px solid rgb(200, 179, 179);
+}
+
+.cards {
+    /* height: 50vh; */
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    /* Hides scrollbar in Firefox */
+    -ms-overflow-style: none;
+    /* Hides scrollbar in Internet Explorer */
+    margin: 12px;
+    gap: 15px;
+}
+
+.card {
+    min-width: 150px;
+    height: 220px;
+    background-color: gray;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin: 20px;
+}
+
+.container button {
+    background-color: rgba(255, 255, 255, 0.3);
+            border: none;
+            cursor: pointer;
+            font-size: 24px;
+            padding: 10px 15px;
+            border-radius: 50%;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+}
+.container button:hover{
+    background-color: rgb(142, 151, 151);
+}
+
+.container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.card img{
+    width: 150px;
+    height: 220px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.trend{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 10vw;
+    align-items: center;
+}
+
+.boxeses{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4,300px);
+    gap: 24px;
+}
+
+@media screen and (max-width:1260px) {
+    .boxeses{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(2,300px);
+        gap: 24px;
+    }
+}
+@media screen and (max-width:590px) {
+    .boxeses{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(1,300px);
+        gap: 24px;
+    }
+}
+
+
+.boxes{
+    font-family: "Martel Sans", serif;
+    height: 250px;
+    width: 260px;
+    background-color: #1E1528;
+    color: white;
+    margin: 12px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+.box-text{
+    margin: 12px;
+    font-weight: bolder;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.boxes .svgs{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin: 6px;
+}
+
+.box-wtc{
+    margin: 12px;
+    font-size: 15px;
+    line-height: 18px;
+}
+.faq{
+    color: white;
+}
+.faq span{
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 5vh;
+}
+.faq .faq-a{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 7.7vw;
+}
+.question{
+    font-family: "Martel Sans", serif;
+    max-width: 80vw;
+    height: 6vh;
+    background-color: #2d2d2d;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+footer{
+    max-width: 60vw;
+    margin: auto;
+    color: white;
+}
+footer .faqqq{
+    font-size: 22px;
+    margin: 22px;
+}
+.footer-items a{
+    color: white;
+    display: flex;
+    padding: 10px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-p{
+    font-size: 15px;
+    font-family: "Martel Sans", serif;
+    font-weight: bold;
+    margin: 12px;
+    margin-bottom: 10vh;
+}
+
+.footer-ready{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 7vh;
+}
+
+.footer-ready p{
+    font-family: "Martel Sans", serif;
+    margin-top: 3vh;
+}
+.footer-ready input {
+    font-weight: bold;
+    background-color: rgba(23, 23, 23, 0.2);
+    font-size: 18px;
+    padding: 16px 300px 15px 9px;
+    border-radius: 4px;
+    border: 0.1px solid rgb(200, 179, 179);
+}
+
+
+@media screen and (max-width:630px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 70vw;
+        margin: auto;
+        height: 62px;
+    }
+    nav img {
+        width: 110px;
+        position: relative;
+        z-index: 10;
+        margin-top: 5px;
+    }
+    
+    nav button {
+        position: relative;
+        z-index: 10;
+        margin-top: 5px;
+    }
+
+
+    .btn {
+        padding: 5px 10px 8px 6px;
+        font-weight: bold;
+        color: white;
+        border-radius: 4px;
+        border: 0.5px solid rgb(255, 255, 255);
+        background-color: rgba(23, 23, 23, 0.2);
+        margin: 5px;
+    }
+    .btn svg{
+        margin-right: 5px;
+    }
+    .btn-red-sm {
+        background-color: red;
+        padding: 9px 9px;
+        border-radius: 4px;
+        font-weight: bold;
+        color: white;
+        border: none;
+    
+    }
+
+
+    .hero span:first-child {
+        font-size: 37px;
+        font-weight: 900;
+        line-height: 55px;
+        text-align: center;
+        /* max-width: 889px; */
+
+    }
+    .hero-new{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+        .footer-ready input {
+            font-weight: bold;
+            background-color: rgba(23, 23, 23, 0.2);
+            font-size: 18px;
+            padding: 16px 60px 15px 9px;
+            border-radius: 4px;
+            border: 0.1px solid rgb(200, 179, 179);
+        }
+        .footer-new{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    
+}
+
+/* @media screen and (max-width:630px){
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 70vw;
+        margin: auto;
+        height: 62px;
+    }
+    
+    nav img {
+        width: 50px;
+        position: relative;
+        z-index: 10;
+        margin-top: 10px;
+    }
+    
+    nav button {
+        position: relative;
+        z-index: 10;
+        margin-top: 10px;
+    }
+} */
